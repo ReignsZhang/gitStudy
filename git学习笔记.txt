@@ -32,3 +32,12 @@ git show-branch --more=10 当前分支摘要，10个版本
 git diff aaaaaa \ bbbbbbbb  查看提交差异 a为旧版本，b为新版本
 
 git mv a.html b.html 重命名
+
+git rm --cached a.html 将a.html转化为未暂存状态
+
+
+git branch dev  创建新的分支
+git branch 列出分支
+git checkout dev 切换到dev分支
+git checkout -m dev 将当前分支的修改同步到Dev分支（尽量别用）
+git branch -d dev 删除分支
