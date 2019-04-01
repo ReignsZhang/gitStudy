@@ -31,4 +31,4 @@ git show-branch --more=10 当前分支摘要，10个版本
 
 git diff aaaaaa \ bbbbbbbb  查看提交差异 a为旧版本，b为新版本
 
-git mv a.html b.html 重命名1
+git mv a.html b.html 重命名
