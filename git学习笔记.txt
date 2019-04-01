@@ -1,0 +1,34 @@
+2019-4-1
+
+windows git 安装教程
+1 ssh-keygen -t rsa -C "645711742@qq.com"
+2 输入秘钥密码
+3 Administrator/.ssh/id_rsa.pub 复制内容
+4 进入github setting 设置sshKey
+5 git config --global user.name "ZAK"
+6 git config --global user.email "645711742@qq.com"
+
+
+windows git 首次提交
+1 在github中新建repository
+2 在项目文件夹下运行git
+3 git init //将该文件夹变为git仓库
+4 git add src //将对应文件存放入仓库中
+5 git commit -m "首次提交" //提交到本地仓库
+6 git remote add origin "远程仓库地址" //首次提交设置远程仓库地址
+7 git push -u origin master //提交到远程仓库master分支
+
+
+Windows git 修改后提交
+1 git status //查看修改的地方都有哪些
+2 git add 或者 git rm //对修改的地方在临时缓存中进行添加和删除
+3 git commit -m "hot fix" //提交到本地仓库
+4 git push origin master //提交到远程分支
+
+git log 查看提交历史 从新到旧
+git show flafjlksafjklmfafjalfkjflajidpajflkajflksa  查看该次提交详细信息
+git show-branch --more=10 当前分支摘要，10个版本
+
+git diff aaaaaa \ bbbbbbbb  查看提交差异 a为旧版本，b为新版本
+
+git mv a.html b.html 重命名
