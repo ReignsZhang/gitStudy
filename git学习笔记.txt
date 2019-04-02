@@ -50,4 +50,4 @@ git reset --hard HEAD 可将工作目录和索引都还原到merge之前的状�
 git reset HEAD foo.c 可将刚刚add的foo.c文件撤回
 git reset HEAD^  清除当前分支最新提交（重置索引，但是不会重置工作目录）
           --hard HEAD^ 重置工作目录，即重置文件内容 
-		  HEAD~3 清除三次提交
+		  HEAD~3 清除最近三次提交
