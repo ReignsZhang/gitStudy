@@ -59,3 +59,5 @@ git stash pop 恢复并删除
 git stash apply  恢复不删除
 git stash list  查看所有储藏
 git stash drop stash@{0} 删除储藏
+
+git branch --set-upstream master origin/next  把本地的master分支和远程的origin/next分支进行关联。
