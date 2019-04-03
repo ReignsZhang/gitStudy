@@ -51,3 +51,13 @@ git reset HEAD foo.c 可将刚刚add的foo.c文件撤回
 git reset HEAD^  清除当前分支最新提交（重置索引，但是不会重置工作目录）
           --hard HEAD^ 重置工作目录，即重置文件内容 
 		  HEAD~3 清除最近三次提交
+		  
+
+2019-4-3
+git stash save "dev first"  储藏当前操作,记录版本
+git stash pop 恢复并删除
+git stash apply  恢复不删除
+git stash list  查看所有储藏
+git stash drop stash@{0} 删除储藏
+
+git branch --set-upstream master origin/next  把本地的master分支和远程的origin/next分支进行关联。
